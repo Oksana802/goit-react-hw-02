@@ -2,11 +2,13 @@ import PropTypes from "prop-types";
 
 const Feedback = ({ feedback, totalFeedback, positiveFeedback }) => (
   <div>
-    <p>Good: {feedback.good}</p>
-    <p>Neutral: {feedback.neutral}</p>
-    <p>Bad: {feedback.bad}</p>
-    <p>Total Feedback: {totalFeedback}</p>
-    <p>Positive Feedback: {positiveFeedback}%</p>
+    <ul>
+      <li>Good: {feedback.good}</li>
+      <li>Neutral: {feedback.neutral}</li>
+      <li>Bad: {feedback.bad}</li>
+      <li>Total Feedback: {totalFeedback}</li>
+      <li>Positive Feedback: {positiveFeedback}%</li>
+    </ul>
   </div>
 );
 
